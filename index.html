@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Location de Table de Beerpong</title>
+
+  <!-- Lien vers la feuille de style -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- --- En-tête du site --- -->
+  <header>
+    <h1>Location de Table de Beerpong</h1>
+    <p>Texte 1</p>
+  </header>
+
+  <!-- --- Menu de navigation --- -->
+  <nav>
+    <a href="#table">La Table</a>
+    <a href="#jeux">Les Jeux</a>
+    <a href="#equipe">L'Équipe</a>
+    <a href="#reservation">Réservation</a>
+  </nav>
+
+  <!-- --- Section 1 : Présentation de la table --- -->
+  <section id="table">
+    <h2>Notre Table</h2>
+    <p>
+      Texte 2   
+      <!-- ===== Lien vers le formulaire ===== -->
+      <!-- <a href="#contact" id="contactBtn" class="btn-contact">📩 Contactez-nous</a> -->
+      <a id="contactBtn" class="btn-contact">📩 Contactez-nous</a>
+
+      <!-- Conteneur pour les objets animés -->
+      <div id="animation-area"></div>
+    </p>
+    <img src="images/table_beerpong.jpg" alt="Table de beerpong" class="img-centree">
+  </section>
+
+  <!-- --- Section 2 : Les options de location --- -->
+  <section id="jeux">
+    <h2>1 Table, 4 Jeux</h2>
+    <ul>
+      <li>Le fameux beerpong</li>
+      <img src="images/table_beerpong.jpg" alt="Jeu Beerpong" class="img-centree">
+      <p>
+        Texte 3
+      </p>
+
+      <li>Le jeu de l'oie remasterisé</li>
+      <img src="images/jeu_de_loie.jpg" alt="Jeu de l'oie" class="img-centree">
+      <p>
+        Texte 4
+      </p>
+
+      <li>Le jeu de la capsule</li>
+      <div class="bloc-image-texte">
+        <img src="images/jeu_capsule.jpg" alt="Jeu de la capsule" class="img-gauche">
+        <div class="texte-droite">
+          <h3>Texte 5</h3>
+          <p>
+            Texte 6
+          </p>
+        </div>
+      </div>
+
+      <li>Le flip cup</li>
+      <img src="images/flip_cup.jpg" alt="Jeu Flip Cup" class="img-droite">
+      <p>
+        Texte 7
+      </p>
+    </ul>
+  </section>
+
+  <!-- --- Section 3 : L’équipe créatrice --- -->
+  <section id="equipe">
+    <h2>Notre Équipe</h2>
+    <p>
+      Texte 8
+    </p>
+    <img src="images/equipe_beer.jpg" alt="Équipe conceptrice" class="img-centree">
+    <p>
+      Texte 9
+    </p>
+
+<section class="carrousel-profils">
+    <h2>Les profils de notre équipe</h2>
+
+    <div class="carrousel-container">
+
+      <!-- Flèche gauche -->
+      <button class="fleche gauche">&#10094;</button>
+
+      <!-- Les profils -->
+      <div class="profils">
+        <div class="profil actif">
+          <img src="images/moche_clara.jpg" alt="Profil 1">
+          <h3>Clara</h3>
+          <p>Responsable des poskas & maillon fort au beerpong.</p>
+        </div>
+
+        <div class="profil">
+          <img src="images/moche_clemby.jpg" alt="Profil 2">
+          <h3>Clemby</h3>
+          <p>Ancien propriétaire de la table & hôte des travaux.</p>
+        </div>
+
+        <div class="profil">
+          <img src="images/moche_clement.jpg" alt="Profil 3">
+          <h3>Clement</h3>
+          <p>Vernisseur hors pair, même s'il ne joue pas aux jeux.</p>
+        </div>
+
+        <div class="profil">
+          <img src="images/moche_ines.jpg" alt="Profil 3">
+          <h3>Ines</h3>
+          <p>Responsble de la peinture & des emplettes.</p>
+        </div>
+
+        <div class="profil">
+          <img src="images/moche_quentin.jpg" alt="Profil 3">
+          <h3>Quentin</h3>
+          <p>Responsable de pas grand chose mais a réussi à percer à côté.</p>
+        </div>
+
+        <div class="profil">
+          <img src="images/moche_lorick.jpg" alt="Profil 3">
+          <h3>Lorick</h3>
+          <p>Expert en scies cloches & en lancés de capsule.</p>
+        </div>
+      </div>
+
+      <!-- Flèche droite -->
+      <button class="fleche droite">&#10095;</button>
+
+    </div>
+
+  </section>
+
+
+  <!-- --- Section 4 : Réservation --- -->
+  <section id="reservation">
+    <h2>Réservation</h2>
+    <p>
+      Contactez-nous pour toute demande personnalisée ou partenariat.
+    </p>
+    <p>
+      Texte 10
+    </p>
+
+      <!-- ===== Section Formulaire ===== -->
+  <section id="contact">
+    <h2>Nous Contacter</h2>
+    <p>Une question, une demande de location ou un partenariat ? Écrivez-nous 👇</p>
+
+    <form action="https://formspree.io/f/xqawkdga" method="POST" class="form-contact">
+      <label for="name">Nom :</label>
+      <input type="text" id="name" name="name" placeholder="Votre nom" required>
+
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" placeholder="Votre adresse email" required>
+
+      <label for="message">Message :</label>
+      <textarea id="message" name="message" rows="5" placeholder="Merci de préciser le type de location (Livraison ou retrait) ainsi que la date et le lieu de l'évènement." required></textarea>
+
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+    
+  </section>
+
+
+
+
+
+  <script src="script.js"></script>
+  </section>
+
+  <!-- --- Pied de page --- -->
+  <footer>
+    <p>&copy; 2025 Location Beerpong - Tous droits réservés</p>
+  </footer>
+
+  <!-- Script JS -->
+  <script src="script.js"></script>
+</body>
+</html>

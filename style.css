@@ -1,0 +1,308 @@
+/* --- Styles généraux --- */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* --- En-tête --- */
+header {
+  background-color: #d01313cd;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* --- Navigation --- */
+nav {
+  background: #1d3557;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* --- Sections --- */
+section {
+  padding: 40px 20px;
+  background-color: #fff;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 1000px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #1d3557;
+}
+
+/* --- Images centrées --- */
+.img-centree {
+  display: block;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+/* --- Image alignée à gauche --- */
+.img-gauche {
+  display: block;
+  margin: 20px auto 20px 0; /* marge automatique à droite */
+  width: 40%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+/* --- Image alignée à droite --- */
+.img-droite {
+  display: block;
+  margin: 20px 0 20px auto; /* marge automatique à gauche */
+  width: 30%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+.bloc-image-texte {
+  display: flex;
+  align-items: center;        /* aligne verticalement */
+  justify-content: space-between;
+  gap: 20px;                  /* espace entre image et texte */
+  margin: 40px auto;
+  max-width: 1000px;
+}
+
+.img-gauche {
+  width: 40%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.texte-droite {
+  flex: 1;                    /* le texte prend tout l’espace restant */
+}
+
+@media (max-width: 768px) {
+  .bloc-image-texte {
+    flex-direction: column;   /* empile sur mobile */
+    text-align: center;
+  }
+
+  .img-gauche {
+    width: 80%;
+  }
+}
+
+.carrousel-profils {
+  text-align: center;
+  padding: 50px 20px;
+  background: #fff;
+  max-width: 900px;
+  margin: 50px auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.carrousel-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profils {
+  width: 100%;
+  overflow: hidden;
+}
+
+.profil {
+  display: none;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.profil.actif {
+  display: block;
+}
+
+.profil img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profil h3 {
+  margin-top: 15px;
+  color: #1d3557;
+}
+
+.fleche {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #1d3557;
+  transition: color 0.2s;
+}
+
+.fleche:hover {
+  color: #e63946;
+}
+
+/* Adaptation mobile */
+@media (max-width: 600px) {
+  .profil img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+
+
+/* --- Pied de page --- */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1d3557;
+  color: #fff;
+}
+
+
+/* --- Lien bouton --- */
+.btn-contact {
+  display: inline-block;
+  margin: 30px auto;
+  padding: 12px 25px;
+  background-color: #e63946;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-contact:hover {
+  background-color: #d62839;
+}
+
+/* --- Formulaire de contact --- */
+#contact {
+  margin-top: 50px;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-contact label {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #1d3557;
+}
+
+.form-contact input,
+.form-contact textarea {
+  margin-top: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+.form-contact button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #1d3557;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.form-contact button:hover {
+  background-color: #457b9d;
+}
+
+
+
+/* Bouton de contact */
+.btn-contact {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #e63946;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.btn-contact:hover {
+  background-color: #d62839;
+}
+
+#animation-area {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 1000;
+} 
+
+/* Style des objets animés (cercles) */
+.moving-object {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  animation: floatUp 3s ease-out forwards;
+}
+
+/* Animation des cercles */
+@keyframes float {
+  from {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-200px) scale(0.5);
+    opacity: 0;
+  }
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-500px) rotate(720deg);
+    opacity: 0;
+  }
+}
+    
