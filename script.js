@@ -55,7 +55,7 @@ document.getElementById("contactBtn").addEventListener("click", (event) => {
 
 function lancerBalleArc_defilement() {
   const gob = document.createElement("img");
-  gob.src = "images/gobelets_2.png";
+  gob.src = "images/Gobelets/gobelets_2.png";
   gob.style.position = "fixed"; // ✅ reste fixe à l’écran
   gob.style.width = "400px";
   gob.style.left = "1100px";
@@ -105,7 +105,7 @@ function lancerBalleArc_defilement() {
 
 // --- 1) Afficher les gobelets une seule fois ---
 const gob = document.createElement("img");
-gob.src = "images/gobelets_2.png";
+gob.src = "images/Gobelets/gobelets_2.png";
 gob.style.position = "absolute";
 gob.style.width = "200px";
 gob.style.left = "1300px";
@@ -174,7 +174,7 @@ document.body.appendChild(planche);
 
 function flip_cup() {
   const verre_1 = document.createElement("img");
-  verre_1.src = "images/gobelet_bleu.png";
+  verre_1.src = "images/Gobelets/gobelet_bleu.png";
   verre_1.style.position = "absolute";
   verre_1.style.width = "40px";
   verre_1.style.left = x_planche+5+"px";
@@ -185,7 +185,7 @@ function flip_cup() {
   document.body.appendChild(verre_1);
 
   const verre_2 = document.createElement("img");
-  verre_2.src = "images/gobelet_bleu.png";
+  verre_2.src = "images/Gobelets/gobelet_bleu.png";
   verre_2.style.position = "absolute";
   verre_2.style.width = "40px";
   verre_2.style.left = x_planche+140+"px";
@@ -259,7 +259,7 @@ document.getElementById("contactBtn").addEventListener("click", lancerBalleArc_d
 // document.body.appendChild(balle_gauche);
 
 // const gob_gauche = document.createElement("img");
-// gob_gauche.src = "images/gobelets_3.png";
+// gob_gauche.src = "images/Gobelets/gobelets_3.png";
 // gob_gauche.style.position = "absolute"; // ✅ reste fixe à l’écran
 // gob_gauche.style.width = "250px";
 // gob_gauche.style.left = "-10px";
@@ -269,7 +269,7 @@ document.getElementById("contactBtn").addEventListener("click", lancerBalleArc_d
 // document.body.appendChild(gob_gauche);
 
 // const gob_gauche_front = document.createElement("img");
-// gob_gauche_front.src = "images/gobelets_3_front.png";
+// gob_gauche_front.src = "images/Gobelets/gobelets_3_front.png";
 // gob_gauche_front.style.position = "absolute"; // ✅ reste fixe à l’écran
 // gob_gauche_front.style.width = "182px";
 // gob_gauche_front.style.left = "25px";

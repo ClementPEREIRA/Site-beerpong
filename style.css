@@ -37,6 +37,7 @@ nav a:hover {
 section {
   padding: 40px 20px;
   background-color: #fff;
+  /* background-color: #f4f4f4; */
   margin: 20px auto;
   width: 90%;
   max-width: 1000px;
@@ -47,6 +48,20 @@ section {
 h2 {
   color: #1d3557;
 }
+
+
+h3 {
+  color: #ffffff;
+  font-family: "Pacifico", cursive;
+  font-size: 32px;
+}
+
+/* <p class="texte-beerpong">Bienvenue dans le monde du Beerpong ! 🍺</p> */
+.texte-beerpong {
+  font-family: "Arial", sans-serif;
+} 
+/* "Arial", "Verdana", "Times New Roman", "Courier New", "Georgia", "Tahoma" */
+
 
 /* --- Images centrées --- */
 .img-centree {
